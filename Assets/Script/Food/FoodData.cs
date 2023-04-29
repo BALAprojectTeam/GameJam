@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class FoodData : ScriptableObject
 {
-    public List<string> componentList;
+    public List<FoodComponent> componentList;
+    public List<string> tastes;
 }
