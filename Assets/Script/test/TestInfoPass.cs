@@ -8,7 +8,7 @@ public class TestInfoPass : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        text.text = "Main" + MainSceneInitInfo.level.ToString();
+        text.text = "Main" + UIManager.level.ToString();
     }
 
     // Update is called once per frame

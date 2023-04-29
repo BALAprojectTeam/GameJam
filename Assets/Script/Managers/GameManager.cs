@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CountDwon : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     public int maxTime = 10;
     private int lastTime = 10;
     private float remainTime = 10;
-    public bool isPause = false;
+    public bool isPause = true;
+    public TMPro.TextMeshProUGUI countDownInfo;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,10 @@ public class CountDwon : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        CountDown();
+    }
+    void CountDown()
     {
         if (!isPause)
         {
@@ -31,7 +36,6 @@ public class CountDwon : MonoBehaviour
                 EndGame();
             }
         }
-        
     }
     void EndGame()
     {
@@ -39,8 +43,7 @@ public class CountDwon : MonoBehaviour
     }
     void UpdateDisplayInfo()
     {
-        TMPro.TextMeshProUGUI textMesh = gameObject.GetComponent<TMPro.TextMeshProUGUI>();
-        textMesh.text = lastTime.ToString();
+        countDownInfo.text = lastTime.ToString();
     }
     void ResetTimer()
     {
