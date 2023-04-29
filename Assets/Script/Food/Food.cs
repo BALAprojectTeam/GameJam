@@ -14,7 +14,7 @@ public class Food : MonoBehaviour
         foreach (var item in data.componentList)
         {
             baseTypes.Add(item.baseType);
-            components.Add(item.name);
+            components.Add(item.componentName);
 
         }
         foreach (var item in data.tastes)

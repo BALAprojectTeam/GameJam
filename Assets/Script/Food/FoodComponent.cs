@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class FoodComponent
+[CreateAssetMenu(menuName = "ScriptableObject/FoodComponent")]
+public class FoodComponent: ScriptableObject
 {
     public string baseType;
-    public string name;
+    public string componentName;
 }
