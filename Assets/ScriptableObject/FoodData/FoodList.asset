@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6c36b82f9e39c34e94d04bd4ecd2299, type: 3}
-  m_Name: Chicken
+  m_Script: {fileID: 11500000, guid: 059489ad15c854048b0e3b0c8874933d, type: 3}
+  m_Name: FoodList
   m_EditorClassIdentifier: 
-  baseType: 
-  componentName: 
+  foodDatas:
+  - {fileID: 11400000, guid: e2c61af25c37e6d4fb34433082b9b0b2, type: 2}
