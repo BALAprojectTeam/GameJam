@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CustomerRequirements : MonoBehaviour
 {
-    public CustomerRequirementData data;
-
+    public CustomerRequirementData externalData;
+    // ‘§…Ë…Ì∑›
+    public CustomerRequirementData baseData;
     // Start is called before the first frame update
     void Start()
     {
