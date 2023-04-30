@@ -17,7 +17,7 @@ public class ScoreManager : MonoBehaviour
     }
     public bool IsPass()
     {
-        return false;
+        return true;
     }
     public int GetFoodScore(FoodData food, CustomerData customer, int balaTimes,bool findForeignObject,  bool isDelivery)
     {

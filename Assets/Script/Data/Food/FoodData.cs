@@ -52,4 +52,28 @@ public class FoodData : ScriptableObject
             return ((int)foodType);
         }
     }
+    public override string ToString()
+    {
+        string str = foodName + "\n";
+        str += "Has Foreign Object? " + hasForeignObject + "\n";
+        str += "FoodType: " + foodType.ToString() + "\n";
+        str += "Component: \n";
+        foreach (var item in meatComponents)
+        {
+            str += item.ToString() + " ";
+        }
+        foreach (var item in nonMeatComponents)
+        {
+            str += item.ToString() + " ";
+        }
+        str += "\nTaste: " + tasteType.ToString() + "\n";
+        str += "Vision: " + visionType.ToString() + "\n";
+        str += "Extra: "  + "\n";
+        foreach (var item in extraComponents)
+        {
+            str += item.ToString() + " ";
+        }
+        return str;
+
+    }
 }

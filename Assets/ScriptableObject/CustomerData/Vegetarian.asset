@@ -18,3 +18,4 @@ MonoBehaviour:
   dislikeTaste: 0
   dislikeVisionType: 0
   preferComponent: 0
+  eatType: 2

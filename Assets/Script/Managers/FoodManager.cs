@@ -9,6 +9,13 @@ public class FoodManager : MonoBehaviour
 
     private readonly List<FoodData> foodInTable = new List<FoodData>();
     private FoodData currentFood = null;
+    public FoodData CurrentFood
+    {
+        get
+        {
+            return currentFood;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +57,7 @@ public class FoodManager : MonoBehaviour
     {
         
     }
-    void GenerateFoodRandom()
+    public void GenerateFoodRandom()
     {
         int index = Random.Range(0, totalFoodList.foodDatas.Count);
         GenerateFood(index);
@@ -75,6 +82,7 @@ public class FoodManager : MonoBehaviour
         {
             currentFood = foodInTable[0];
         }
+        currentFood = food;
     }
 
     bool RandomForeignObject()

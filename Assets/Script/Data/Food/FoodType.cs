@@ -16,14 +16,14 @@ public enum MeatType
     Pork = 1,
     Chichken = 2,
     Beef = 4,
-    All = 1 | 2 | 4
+    AllMeat = 1 | 2 | 4
 }
 
 public enum NonMeatType
 {
     AnimalProtein = 8,
     Vegestable = 16,
-    All = 8 | 16
+    AllNoneMeat = 8 | 16
 }
 public enum VisionType
 {

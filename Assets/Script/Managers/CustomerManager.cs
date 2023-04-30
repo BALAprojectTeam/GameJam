@@ -35,12 +35,13 @@ public class CustomerManager : MonoBehaviour
     {
         
     }
-    CustomerData GenerateCustomer()
+    public CustomerData GenerateCustomer()
     {
         CustomerData data = RandomCustomerTemplate();
         data.dislikeTaste = RandomTasteType();
         data.dislikeVisionType = RandomVisionType();
         data.preferComponent = RandomExtraComponent();
+        currentCustomer = data;
         return data;
     }
     CustomerData RandomCustomerTemplate()
