@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fried Vegetarian Chicken
   m_EditorClassIdentifier: 
   foodName: Fried Vegetarian Chicken
-  foodType: 1
+  foodType: 2
   meatComponents: 
   nonMeatComponents: 
   extraComponents: 02000000

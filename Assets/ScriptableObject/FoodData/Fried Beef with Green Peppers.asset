@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Fried Beef with Green Peppers
   m_EditorClassIdentifier: 
   foodName: Fried Beef with Green Peppers
-  foodType: 0
+  foodType: 2
   meatComponents: 04000000
   nonMeatComponents: 
   extraComponents: 
   hasForeignObject: 0
   visionType: 0
   tasteType: 0
+  componentDescriptions: []

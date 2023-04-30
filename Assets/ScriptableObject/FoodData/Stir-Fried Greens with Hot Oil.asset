@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Stir-Fried Greens with Hot Oil
   m_EditorClassIdentifier: 
   foodName: Stir-Fried Greens with Hot Oil
-  foodType: 1
+  foodType: 2
   meatComponents: 
   nonMeatComponents: 10000000
   extraComponents: 
   hasForeignObject: 0
   visionType: 0
   tasteType: 0
+  componentDescriptions: []

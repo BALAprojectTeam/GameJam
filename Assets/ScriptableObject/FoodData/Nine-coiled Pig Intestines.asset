@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Nine-coiled Pig Intestines
   m_EditorClassIdentifier: 
   foodName: Nine-coiled Pig Intestines
-  foodType: 0
+  foodType: 1
   meatComponents: 01000000
   nonMeatComponents: 
   extraComponents: 04000000
   hasForeignObject: 0
   visionType: 0
   tasteType: 0
+  componentDescriptions: []

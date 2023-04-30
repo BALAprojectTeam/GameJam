@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
     void EndGame()
     {
         isPause = true;
+        var scoreManager = gameObject.GetComponent<ScoreManager>();
+        scoreManager.IsPass();
     }
     void UpdateDisplayInfo()
     {

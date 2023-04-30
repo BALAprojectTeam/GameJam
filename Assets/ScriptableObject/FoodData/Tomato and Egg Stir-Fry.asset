@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Tomato and Egg Stir-Fry
   m_EditorClassIdentifier: 
   foodName: Tomato and Egg Stir-Fry
-  foodType: 1
+  foodType: 2
   meatComponents: 
   nonMeatComponents: 08000000
   extraComponents: 01000000
   hasForeignObject: 0
   visionType: 0
   tasteType: 0
+  componentDescriptions: []

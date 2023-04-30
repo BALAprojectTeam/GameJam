@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 public enum FoodType
 {
-    Meat = 0,
-    Vegestables = 1,
+    None = 3,
+    Meat = 1,
+    Vegestables = 2,
 }
 
 public enum MeatType

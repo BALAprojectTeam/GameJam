@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Braised Chicken with Mushrooms
   m_EditorClassIdentifier: 
   foodName: 'Braised Chicken with Mushrooms '
-  foodType: 0
+  foodType: 1
   meatComponents: 02000000
   nonMeatComponents: 
   extraComponents: 02000000
   hasForeignObject: 0
   visionType: 0
   tasteType: 0
+  componentDescriptions: []

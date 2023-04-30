@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Caesar Salad
   m_EditorClassIdentifier: 
   foodName: 'Caesar Salad '
-  foodType: 1
+  foodType: 2
   meatComponents: 
   nonMeatComponents: 10000000
   extraComponents: 01000000

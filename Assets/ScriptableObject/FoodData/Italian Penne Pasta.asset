@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Italian Penne Pasta
   m_EditorClassIdentifier: 
   foodName: 'Italian Penne Pasta '
-  foodType: 1
+  foodType: 2
   meatComponents: 
   nonMeatComponents: 08000000
   extraComponents: 01000000

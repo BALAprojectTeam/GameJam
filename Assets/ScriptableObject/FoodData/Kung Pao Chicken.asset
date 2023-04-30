@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Kung Pao Chicken
   m_EditorClassIdentifier: 
   foodName: Kung Pao Chicken
-  foodType: 0
+  foodType: 1
   meatComponents: 02000000
   nonMeatComponents: 
   extraComponents: 0800000004000000
   hasForeignObject: 0
   visionType: 0
   tasteType: 0
+  componentDescriptions: []

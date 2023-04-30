@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Creamy Fettuccine Alfredo
   m_EditorClassIdentifier: 
   foodName: Creamy Fettuccine Alfredo
-  foodType: 1
+  foodType: 2
   meatComponents: 
   nonMeatComponents: 08000000
   extraComponents: 08000000

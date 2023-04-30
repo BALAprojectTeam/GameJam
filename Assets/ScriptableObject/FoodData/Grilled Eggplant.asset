@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Grilled Eggplant
   m_EditorClassIdentifier: 
   foodName: Grilled Eggplant
-  foodType: 1
+  foodType: 2
   meatComponents: 
   nonMeatComponents: 10000000
   extraComponents: 
   hasForeignObject: 0
   visionType: 0
   tasteType: 0
+  componentDescriptions: []

@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Vegetarian Spring Rolls
   m_EditorClassIdentifier: 
   foodName: Vegetarian Spring Rolls
-  foodType: 1
+  foodType: 2
   meatComponents: 
   nonMeatComponents: 10000000
   extraComponents: 0400000008000000
   hasForeignObject: 0
   visionType: 0
   tasteType: 0
+  componentDescriptions: []

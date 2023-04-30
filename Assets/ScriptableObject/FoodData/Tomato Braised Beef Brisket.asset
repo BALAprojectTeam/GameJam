@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Tomato Braised Beef Brisket
   m_EditorClassIdentifier: 
   foodName: Tomato Braised Beef Brisket
-  foodType: 0
+  foodType: 1
   meatComponents: 04000000
   nonMeatComponents: 
   extraComponents: 01000000
   hasForeignObject: 0
   visionType: 0
   tasteType: 0
+  componentDescriptions: []

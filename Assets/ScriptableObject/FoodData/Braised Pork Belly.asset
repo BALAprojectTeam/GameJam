@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Braised Pork Belly
   m_EditorClassIdentifier: 
   foodName: 'Braised Pork Belly '
-  foodType: 0
+  foodType: 1
   meatComponents: 01000000
   nonMeatComponents: 
   extraComponents: 
   hasForeignObject: 0
   visionType: 0
   tasteType: 0
+  componentDescriptions: []
