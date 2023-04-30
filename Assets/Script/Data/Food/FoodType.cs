@@ -39,3 +39,12 @@ public enum TasteType
     Salt = 4096,
     Vinegar = 8192
 }
+
+public enum ExtraComponent
+{
+    None = 0,
+    Tomato = 1,
+    Mushroom = 2,
+    Cucumber = 4,
+    Grain = 8
+}

@@ -9,6 +9,7 @@ public class FoodData : ScriptableObject
     public FoodType foodType;
     public List<MeatType> meatComponents;
     public List<NonMeatType> nonMeatComponents;
+    public List<ExtraComponent> extraComponents;
     public bool hasForeignObject;
     public VisionType visionType;
     public TasteType tasteType;

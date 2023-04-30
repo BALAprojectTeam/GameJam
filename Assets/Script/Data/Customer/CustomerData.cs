@@ -9,4 +9,5 @@ public class CustomerData : ScriptableObject
     public List<NonMeatType> dislikeNonMeatTypes = new List<NonMeatType>();
     public TasteType dislikeTaste;
     public VisionType dislikeVisionType;
+    public ExtraComponent preferComponent;
 }

@@ -40,6 +40,7 @@ public class CustomerManager : MonoBehaviour
         CustomerData data = RandomCustomerTemplate();
         data.dislikeTaste = RandomTasteType();
         data.dislikeVisionType = RandomVisionType();
+        data.preferComponent = RandomExtraComponent();
         return data;
     }
     CustomerData RandomCustomerTemplate()
@@ -97,6 +98,33 @@ public class CustomerManager : MonoBehaviour
         else
         {
             return VisionType.Garlic;
+        }
+    }
+    ExtraComponent RandomExtraComponent()
+    {
+        float noneProbability = 0.75f;
+        float extraComponentNum = 4.0f;
+        float extraComponentProbability = (1.0f - noneProbability) / extraComponentNum;
+        float r = Random.Range(0.0f, 1.0f);
+        if (r < noneProbability)
+        {
+            return ExtraComponent.None;
+        }
+        else if (r < noneProbability + extraComponentProbability)
+        {
+            return ExtraComponent.Cucumber;
+        }
+        else if (r < noneProbability + 2 * extraComponentProbability)
+        {
+            return ExtraComponent.Grain;
+        }
+        else if (r < noneProbability + 3 * extraComponentProbability)
+        {
+            return ExtraComponent.Mushroom;
+        }
+        else
+        {
+            return ExtraComponent.Tomato;
         }
     }
 }
