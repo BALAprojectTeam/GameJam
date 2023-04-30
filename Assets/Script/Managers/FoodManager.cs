@@ -24,6 +24,25 @@ public class FoodManager : MonoBehaviour
         //{
         //    Debug.LogFormat("{0} {1} {2} {3}", foodInTable[i].foodName, foodInTable[i].hasForeignObject, foodInTable[i].visionType, foodInTable[i].tasteType);
         //}
+
+        foreach(var item in totalFoodList.foodDatas)
+        {
+            string str = "";
+            str += item.name + "\nType: " + item.foodType.ToString() + "\n";
+            foreach(var component in item.meatComponents)
+            {
+                str += "Meat: " + component.ToString() + "\n";
+            }
+            foreach (var component in item.nonMeatComponents)
+            {
+                str += "NonMeat: " + component.ToString() + "\n";
+            }
+            foreach (var component in item.extraComponents)
+            {
+                str += "Extra: " + component.ToString() + "\n";
+            }
+            Debug.Log(str);
+        }
     }
 
     // Update is called once per frame

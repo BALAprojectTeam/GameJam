@@ -12,22 +12,22 @@ public class CustomerManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < 100; ++i)
-        {
-            int dislike = 0;
-            currentCustomer = GenerateCustomer();
-            foreach(var item in currentCustomer.dislikeMeatTypes)
-            {
-                dislike |= ((int)item);
-            }
-            foreach (var item in currentCustomer.dislikeNonMeatTypes)
-            {
-                dislike |= ((int)item);
-            }
-            dislike |= ((int)currentCustomer.dislikeTaste);
-            dislike |= ((int)currentCustomer.dislikeVisionType);
-            Debug.Log(System.Convert.ToString(dislike, 2));
-        }
+        //for(int i = 0; i < 100; ++i)
+        //{
+        //    int dislike = 0;
+        //    currentCustomer = GenerateCustomer();
+        //    foreach(var item in currentCustomer.dislikeMeatTypes)
+        //    {
+        //        dislike |= ((int)item);
+        //    }
+        //    foreach (var item in currentCustomer.dislikeNonMeatTypes)
+        //    {
+        //        dislike |= ((int)item);
+        //    }
+        //    dislike |= ((int)currentCustomer.dislikeTaste);
+        //    dislike |= ((int)currentCustomer.dislikeVisionType);
+        //    Debug.Log(System.Convert.ToString(dislike, 2));
+        //}
     }
 
     // Update is called once per frame

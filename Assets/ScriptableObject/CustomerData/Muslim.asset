@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Muslim
   m_EditorClassIdentifier: 
   templateName: Muslim
-  dislikeMeatTypes: 08000000
+  dislikeMeatTypes: 01000000
   dislikeNonMeatTypes: 
   dislikeTaste: 0
   dislikeVisionType: 0
+  preferComponent: 0

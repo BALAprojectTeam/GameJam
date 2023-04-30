@@ -13,4 +13,17 @@ MonoBehaviour:
   m_Name: FoodList
   m_EditorClassIdentifier: 
   foodDatas:
+  - {fileID: 11400000, guid: dc81b019ac106dd4888d94d27eea8cc5, type: 2}
+  - {fileID: 11400000, guid: 2434128d5a749b94d8d7089ecf310f96, type: 2}
+  - {fileID: 11400000, guid: f01810bb6ce2aed4096f3239e3ad458c, type: 2}
+  - {fileID: 11400000, guid: 03a9acc2b14f5974a826291e95d111d4, type: 2}
+  - {fileID: 11400000, guid: 29fd60e981a468640beafe0d90ee70ef, type: 2}
+  - {fileID: 11400000, guid: f7f902b8b0e4d0145bc7286f8945f3f5, type: 2}
+  - {fileID: 11400000, guid: f5d5a8884c9e5b142bbe01b84f13bf0e, type: 2}
   - {fileID: 11400000, guid: e2c61af25c37e6d4fb34433082b9b0b2, type: 2}
+  - {fileID: 11400000, guid: cac81f0c1525c4a419800f930de16008, type: 2}
+  - {fileID: 11400000, guid: 85d33c0c7fdf191438fee9e4aea73d2a, type: 2}
+  - {fileID: 11400000, guid: 345a49ac23293bc41808c02194f3446f, type: 2}
+  - {fileID: 11400000, guid: 4dd47939935f66c4fb24f26e6fc6c624, type: 2}
+  - {fileID: 11400000, guid: 1ead4d0373dcc79428a5a32f1fa7b1c5, type: 2}
+  - {fileID: 11400000, guid: 2bbbc08bbb2646642b8646df5d4082a4, type: 2}

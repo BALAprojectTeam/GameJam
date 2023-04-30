@@ -13,4 +13,5 @@ public class FoodData : ScriptableObject
     public bool hasForeignObject;
     public VisionType visionType;
     public TasteType tasteType;
+    public List<string> componentDescriptions;
 }
