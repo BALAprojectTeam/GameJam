@@ -6,35 +6,36 @@ using System.Threading.Tasks;
 
 public enum FoodType
 {
-    Meat,
-    HalfMeat,
-    Vegestables
-
+    Meat = 1,
+    HalfMeat = 2,
+    Vegestables = 4,
 }
 
 public enum MeatType
 {
-    Pork,
-    Chichken,
-    Beef
+    Pork = 8,
+    Chichken = 16,
+    Beef = 32,
+    All = 8 | 16 | 32
 }
 
 public enum NonMeatType
 {
-    AnimalProtein,
-    Vegestable
+    AnimalProtein = 64,
+    Vegestable = 128,
+    All = 64 | 128
 }
 public enum VisionType
 {
-    None,
-    Onion,
-    Ginger,
-    Garlic
+    None = 0,
+    Onion = 256,
+    Ginger = 512,
+    Garlic = 1024
 }
 public enum TasteType
 {
-    None,
-    Sugar,
-    Salt,
-    Vinegar
+    None = 0,
+    Sugar = 2048,
+    Salt = 4096,
+    Vinegar = 8192
 }

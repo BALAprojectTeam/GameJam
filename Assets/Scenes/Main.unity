@@ -646,6 +646,8 @@ GameObject:
   - component: {fileID: 1599608120}
   - component: {fileID: 1599608119}
   - component: {fileID: 1599608121}
+  - component: {fileID: 1599608123}
+  - component: {fileID: 1599608122}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -695,6 +697,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa201df66e6cba4795d400e47e58f00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1599608122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599608118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25c183e4e322b84ab980576345031ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalFoodList: {fileID: 11400000, guid: bbf24ea31447fb248918c67f5607d950, type: 2}
+--- !u!114 &1599608123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599608118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d0f9d6fc3c802c48bb3ba23d8576e7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customerTemplatesByTypes: {fileID: 11400000, guid: adaac18e735164e419f9316c1c7d3453, type: 2}
+  customerTemplatesByComponents: {fileID: 11400000, guid: a292709ca0896ab4c8d034109e79d6e0, type: 2}
 --- !u!1 &1651846810
 GameObject:
   m_ObjectHideFlags: 0
