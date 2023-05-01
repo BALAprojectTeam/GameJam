@@ -21,5 +21,7 @@ MonoBehaviour:
   visionType: 0
   tasteType: 0
   componentDescriptions: []
-  originalImage: {fileID: 21300000, guid: 8a3bd46828441e0478b3e2bd59c8e110, type: 3}
-  brokenImage: {fileID: 0}
+  PerfectImage: {fileID: 21300000, guid: 363c1bcb647bea14a8e6d70299b6b4b1, type: 3}
+  DishesWithForgeinObjectImage: {fileID: 21300000, guid: d0487e0d5590af84abe830bfcadf3436, type: 3}
+  BalaedDishImage: {fileID: 21300000, guid: ac9bbe8b77053e2418637ccef0afe1e0, type: 3}
+  BalaedDishImageWithForeignObjectImage: {fileID: 21300000, guid: 2ec13c105920eed4ea312a3072298c51, type: 3}

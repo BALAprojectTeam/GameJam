@@ -23,5 +23,5 @@ MonoBehaviour:
   componentDescriptions: []
   PerfectImage: {fileID: 21300000, guid: 309db8c2645f07a45a5cadce22e718d0, type: 3}
   DishesWithForgeinObjectImage: {fileID: 21300000, guid: db8628e91144cdc4788f86a647234286, type: 3}
-  BalaedDishImage: {fileID: 21300000, guid: 00782abc1fc5f0e4482bfded6d712436, type: 3}
+  BalaedDishImage: {fileID: 21300000, guid: aa5b847b1e045f84f9bc8b725294afff, type: 3}
   BalaedDishImageWithForeignObjectImage: {fileID: 21300000, guid: 81ecc638cb207a249978bb16d6da69bf, type: 3}
