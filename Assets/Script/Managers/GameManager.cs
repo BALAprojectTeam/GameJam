@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     FoodManager foodManager;
     ScoreManager scoreManager;
     CustomerManager customerManager;
+    HandManager handManager;
 
     // tmp info
     public TMPro.TextMeshProUGUI foodInfo;
@@ -35,7 +36,7 @@ public class GameManager : MonoBehaviour
         foodManager = gameObject.GetComponent<FoodManager>();
         scoreManager = gameObject.GetComponent<ScoreManager>();
         customerManager = gameObject.GetComponent<CustomerManager>();
-        NextTurn();
+        handManager = gameObject.GetComponent<HandManager>();
         StartTimer();
     }
 
@@ -43,6 +44,11 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         CountDown();
+        if(foodManager.CurrentFood == null && handManager.HandIdle)
+        {
+            NextTurn();
+            handManager.PassNewFood();
+        }
     }
     void CountDown()
     {
@@ -68,7 +74,7 @@ public class GameManager : MonoBehaviour
     }
     void UpdateCountDownInfo()
     {
-        Debug.Log(lastTime);
+        //Debug.Log(lastTime);
         countDownInfo.text = lastTime.ToString();
     }
 
@@ -96,16 +102,18 @@ public class GameManager : MonoBehaviour
     void StartTimer()
     {
         isPause = false;
+        handManager.Pause(isPause);
     }
     void PauseTimer()
     {
         isPause = true;
+        handManager.Pause(isPause);
     }
     void DetermindWorldLine(bool isDelivery)
     {
         score += scoreManager.GetFoodScore(foodManager.CurrentFood, customerManager.CurrentCustomer, balaTimes, find, isDelivery);
         UpdateScore();
-        NextTurn();
+        foodManager.Clear();
     }
     public void Bala()
     {
@@ -119,10 +127,20 @@ public class GameManager : MonoBehaviour
     }
     public void Delivery()
     {
-        DetermindWorldLine(true);
+        if (foodManager.CurrentFood != null && handManager.HandIdle)
+        {
+            DetermindWorldLine(true);
+            handManager.Delivery();
+        }
+        
     }
     public void Remake()
     {
-        DetermindWorldLine(false);
+        if (foodManager.CurrentFood != null && handManager.HandIdle)
+        {
+            DetermindWorldLine(false);
+            handManager.Remake();
+        }
+        
     }
 }
