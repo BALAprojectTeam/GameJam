@@ -11,6 +11,7 @@ public class DishDisplay : MonoBehaviour
     public Image plateImage;
     public Image visionImage;
     public List<Sprite> visionImages;
+    
     // Start is called before the first frame update
     void Start()
     {
