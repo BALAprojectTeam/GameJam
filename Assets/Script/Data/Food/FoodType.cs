@@ -29,7 +29,7 @@ public enum VisionType
 {
     None = 0,
     Onion = 32,
-    Ginger = 64,
+    GreenOnion = 64,
     Garlic = 128
 }
 public enum TasteType
