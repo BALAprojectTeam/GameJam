@@ -631,9 +631,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dish: {fileID: 11400000, guid: dc81b019ac106dd4888d94d27eea8cc5, type: 2}
-  originalImage: {fileID: 0}
+  originalImage: {fileID: 1602801074}
   plateImage: {fileID: 0}
-  foreignObjectImage: {fileID: 0}
+  foreignObjectImage: {fileID: 425900572}
 --- !u!1 &425900570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,9 +1498,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dish: {fileID: 11400000, guid: dc81b019ac106dd4888d94d27eea8cc5, type: 2}
-  originalImage: {fileID: 0}
+  originalImage: {fileID: 555530837}
   plateImage: {fileID: 0}
-  foreignObjectImage: {fileID: 0}
+  foreignObjectImage: {fileID: 942126086}
 --- !u!1 &903968456
 GameObject:
   m_ObjectHideFlags: 0

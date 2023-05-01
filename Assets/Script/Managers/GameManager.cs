@@ -89,6 +89,10 @@ public class GameManager : MonoBehaviour
     {
         foodManager.GenerateFoodRandom();
         customerManager.GenerateCustomer();
+
+        DishDisplay dish = handManager.leftHand.dish.GetComponent<DishDisplay>();
+        dish.UpdateData(foodManager.CurrentFood);
+
         foodInfo.text = foodManager.CurrentFood.ToString();
         customerInfo.text = customerManager.CurrentCustomer.ToString();
         balaTimes = 0;
