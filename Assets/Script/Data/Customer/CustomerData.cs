@@ -5,7 +5,7 @@ using UnityEngine;
 public class CustomerData : ScriptableObject
 {
 
-    public string templateName = "Human";
+    public string templateName = "";
     public List<MeatType> dislikeMeatTypes = new List<MeatType>();
     public List<NonMeatType> dislikeNonMeatTypes = new List<NonMeatType>();
     public TasteType dislikeTaste = TasteType.None;
