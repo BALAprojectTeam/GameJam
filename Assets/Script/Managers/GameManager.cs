@@ -34,7 +34,8 @@ public class GameManager : MonoBehaviour
     public int balaTimes = 0;
     public bool find = false;
 
-
+    public List<Sprite> chiefFaces;
+    public Image chiefFace;
     // Start is called before the first frame update
     void Start()
     {
@@ -120,6 +121,8 @@ public class GameManager : MonoBehaviour
         UpdateCustomerInfo();
         balaTimes = 0;
         find = false;
+
+        chiefFace.sprite = chiefFaces[0];
     }
     void UpdateCustomerInfo()
     {
@@ -169,12 +172,22 @@ public class GameManager : MonoBehaviour
     {
         if (foodManager.CurrentFood != null && handManager.HandIdle)
         {
+            foodManager.Clear();
             handManager.Remake();
         }
     }
     void DetermindWorldLine(bool isDelivery)
     {
-        score += scoreManager.GetFoodScore(foodManager.CurrentFood, customerManager.CurrentCustomer, balaTimes, find, isDelivery);
+        var tmp = scoreManager.GetFoodScore(foodManager.CurrentFood, customerManager.CurrentCustomer, balaTimes, find, isDelivery);
+        score += tmp;
+        if (tmp > 0)
+        {
+            chiefFace.sprite = chiefFaces[1];
+        }
+        else
+        {
+            chiefFace.sprite = chiefFaces[2];
+        }
         UpdateScore();
         foodManager.Clear();
     }
