@@ -25,3 +25,4 @@ MonoBehaviour:
   DishesWithForgeinObjectImage: {fileID: 21300000, guid: a490af7b37d96104ab4913c3ce46d1f9, type: 3}
   BalaedDishImage: {fileID: 21300000, guid: 4bd6c95cc60eda74a82145c40b2ef315, type: 3}
   BalaedDishImageWithForeignObjectImage: {fileID: 21300000, guid: 45eae977b27a02a42a3bc7e9a19133d8, type: 3}
+  Ingredient: {fileID: 21300000, guid: 5f85440dd8c0b114a9ef0102ca1e1b82, type: 3}
