@@ -14,6 +14,7 @@ public class FoodData : ScriptableObject
     public VisionType visionType;
     public TasteType tasteType;
     public List<string> componentDescriptions;
+
     public Sprite PerfectImage; //菜品完美图
     public Sprite DishesWithForgeinObjectImage; //菜品有异物图
     public Sprite BalaedDishImage; //菜品巴拉图

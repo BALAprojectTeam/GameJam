@@ -182,6 +182,7 @@ public class GameManager : MonoBehaviour
     {
         ++balaTimes;
         //balaTimesText.text = balaTimes.ToString();
+        handManager.leftHand.dish.GetComponent<DishDisplay>().Bala();
         if (foodManager.CurrentFood.hasForeignObject)
         {
             find = true;
