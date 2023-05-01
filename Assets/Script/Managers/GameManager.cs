@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     public int balaTimes = 0;
     public bool find = false;
 
-
+    public List<Sprite> visionImages;
     // Start is called before the first frame update
     void Start()
     {
@@ -169,6 +169,7 @@ public class GameManager : MonoBehaviour
     {
         if (foodManager.CurrentFood != null && handManager.HandIdle)
         {
+            foodManager.Clear();
             handManager.Remake();
         }
     }
