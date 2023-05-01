@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -87,7 +88,16 @@ public class GameManager : MonoBehaviour
     void EndGame()
     {
         isPause = true;
-        scoreInfo.text = (needScore <= score).ToString();
+        if((needScore <= score))
+        {
+            FinalManager.finalScore = score;
+            SceneManager.LoadScene("WinEndScences");
+        }
+        else
+        {
+            FinalManager.finalScore = score;
+            SceneManager.LoadScene("FailEndScences");
+        }
     }
     void UpdateCountDownInfo()
     {
