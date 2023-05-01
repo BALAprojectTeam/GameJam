@@ -265,6 +265,6 @@ public class GameManager : MonoBehaviour
     }
     public void ReturnMain()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("LevelChoice");
     }
 }
