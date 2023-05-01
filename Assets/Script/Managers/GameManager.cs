@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,7 +20,8 @@ public class GameManager : MonoBehaviour
     HandManager handManager;
 
     public List<TMPro.TextMeshProUGUI> customerInfos;
-
+    public List<Image> chats;
+    private Image displayChat = null;
     // tmp info
     public TMPro.TextMeshProUGUI foodInfo;
     public TMPro.TextMeshProUGUI customerInfo;
@@ -32,6 +34,12 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        foreach(var item in chats)
+        {
+            var color = item.color;
+            color.a = 0;
+            item.color = color;
+        }
         ResetTimer();
         UpdateCountDownInfo();
         UpdateScore();
@@ -89,6 +97,12 @@ public class GameManager : MonoBehaviour
 
     void NextTurn()
     {
+        foreach (var item in chats)
+        {
+            var color = item.color;
+            color.a = 0;
+            item.color = color;
+        }
         foodManager.GenerateFoodRandom();
         customerManager.GenerateCustomer();
 
@@ -103,6 +117,10 @@ public class GameManager : MonoBehaviour
     }
     void UpdateCustomerInfo()
     {
+        for(int i = 0; i < customerInfos.Count; ++i)
+        {
+            customerInfos[i].text = "";
+        }
         var customner = customerManager.CurrentCustomer;
         int index = 0;
         if(customner.templateName != "")
@@ -185,5 +203,30 @@ public class GameManager : MonoBehaviour
             handManager.Remake();
         }
         
+    }
+
+    public void Eat()
+    {
+        if (foodManager.CurrentFood != null && handManager.HandIdle)
+        {
+            switch (foodManager.CurrentFood.tasteType)
+            {
+                case TasteType.None:
+                    displayChat = chats[0];
+                    break;
+                case TasteType.Salt:
+                    displayChat = chats[1];
+                    break;
+                case TasteType.Sugar:
+                    displayChat = chats[2];
+                    break;
+                case TasteType.Vinegar:
+                    displayChat = chats[3];
+                    break;
+            }
+            var color = displayChat.color;
+            color.a = 1;
+            displayChat.color = color;
+        }
     }
 }
