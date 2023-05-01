@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public  static int levelTime = 1;
+    public  static int levelTime = 500;
     public  static int levelScore = 0;
     public int maxTime ;
     public int needScore ;
