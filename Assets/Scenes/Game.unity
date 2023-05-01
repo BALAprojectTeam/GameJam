@@ -1095,6 +1095,7 @@ GameObject:
   - component: {fileID: 1003131369}
   - component: {fileID: 1003131368}
   - component: {fileID: 1003131367}
+  - component: {fileID: 1003131371}
   - component: {fileID: 1003131370}
   m_Layer: 5
   m_Name: Stop
@@ -1179,6 +1180,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1003131371}
+        m_TargetAssemblyTypeName: ShowButtonsOnClick, Assembly-CSharp
+        m_MethodName: ShowButtons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1003131368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1231,6 +1244,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   darkMask: {fileID: 277929334}
   duration: 1
+--- !u!114 &1003131371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003131365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb218d74eb9b4eee8efd9f5d9382f46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonsToShow:
+  - {fileID: 2008336759}
+  - {fileID: 36566763}
+  - {fileID: 611967029}
 --- !u!1 &1144197435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,6 +1777,7 @@ GameObject:
   - component: {fileID: 1293745887}
   - component: {fileID: 1293745886}
   - component: {fileID: 1293745891}
+  - component: {fileID: 1293745892}
   - component: {fileID: 1293745890}
   m_Layer: 5
   m_Name: Canvas
@@ -1850,7 +1880,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb218d74eb9b4eee8efd9f5d9382f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonsToShow: []
+  buttonsToShow:
+  - {fileID: 2008336759}
+  - {fileID: 36566763}
+  - {fileID: 611967029}
 --- !u!114 &1293745891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1864,9 +1897,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonsToHide:
-  - {fileID: 1003131367}
-  - {fileID: 1003131367}
-  - {fileID: 1003131367}
+  - {fileID: 2008336759}
+  - {fileID: 36566763}
+  - {fileID: 611967029}
+--- !u!114 &1293745892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293745885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd541eb1b6e8874eb8d65b6643badfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  darkMask: {fileID: 277929334}
+  duration: 1
 --- !u!1 &1299344288
 GameObject:
   m_ObjectHideFlags: 0

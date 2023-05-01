@@ -8,14 +8,14 @@ public class Pagination : MonoBehaviour
     public GameObject[] pages;
     public int currentPage = 0;
 
-    void Start()
+    public void Start()
     {
         ShowPage(currentPage); // 显示当前页
         prevButton.onClick.AddListener(PrevPage); // 绑定上一页按钮事件
         nextButton.onClick.AddListener(NextPage); // 绑定下一页按钮事件
     }
 
-    void PrevPage()
+    public void PrevPage()
     {
         currentPage--;
         if (currentPage < 0)
@@ -25,7 +25,7 @@ public class Pagination : MonoBehaviour
         ShowPage(currentPage); // 显示上一页
     }
 
-    void NextPage()
+    public void NextPage()
     {
         currentPage++;
         if (currentPage >= pages.Length)
@@ -35,7 +35,7 @@ public class Pagination : MonoBehaviour
         ShowPage(currentPage); // 显示下一页
     }
 
-    void ShowPage(int index)
+    public void ShowPage(int index)
     {
         for (int i = 0; i < pages.Length; i++)
         {
