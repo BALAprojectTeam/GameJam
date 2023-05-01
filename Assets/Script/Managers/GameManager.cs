@@ -261,6 +261,7 @@ public class GameManager : MonoBehaviour
     }
     public void Role(string sceneName)
     {
+        Debug.Log("123");
         SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
     }
     public void ReturnMain()
