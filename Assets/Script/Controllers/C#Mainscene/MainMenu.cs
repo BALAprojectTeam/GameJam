@@ -24,16 +24,21 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-        GameManager.levelTime = easyTime;
-        GameManager.levelScore = easyScore;
-        easyScoreText.text = easyScore.ToString();
-        easyTimeText.text = easyTime.ToString() + "s";
 
-        normalScoreText.text = normalScore.ToString();
-        normalTimeText.text = normalTime.ToString() + "s";
+        if (easyScoreText)
+        {
+            GameManager.levelTime = easyTime;
+            GameManager.levelScore = easyScore;
+            easyScoreText.text = easyScore.ToString();
+            easyTimeText.text = easyTime.ToString() + "s";
 
-        hardScoreText.text = hardScore.ToString();
-        hardTimeText.text = hardTime.ToString() + "s";
+            normalScoreText.text = normalScore.ToString();
+            normalTimeText.text = normalTime.ToString() + "s";
+
+            hardScoreText.text = hardScore.ToString();
+            hardTimeText.text = hardTime.ToString() + "s";
+        }
+
     }
     public void Play(string sceneName)
     {
@@ -60,8 +65,11 @@ public class MainMenu : MonoBehaviour
 
     public void QuitApp()
     {
-        Application.Quit();
-        Debug.Log("QIUT!"); //修改成退出程序
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+         Application.Quit();
+#endif
     }
 
     public void Role(string sceneName)
