@@ -14,6 +14,8 @@ public class FoodData : ScriptableObject
     public VisionType visionType;
     public TasteType tasteType;
     public List<string> componentDescriptions;
+    public Sprite originalImage;
+    public Sprite brokenImage;
 
     public int MainComponents
     {

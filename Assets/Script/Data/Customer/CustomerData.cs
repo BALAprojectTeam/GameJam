@@ -12,6 +12,7 @@ public class CustomerData : ScriptableObject
     public VisionType dislikeVisionType = VisionType.None;
     public ExtraComponent preferComponent = ExtraComponent.None;
     public FoodType eatType = FoodType.None;
+    public Sprite image;
     public int EatType
     {
         get

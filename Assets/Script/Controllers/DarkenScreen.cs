@@ -14,6 +14,7 @@ public class DarkenScreen : MonoBehaviour
 
     private void Start()
     {
+        // 点击时激活mask功能没有写
         darkMask.color = new Color(0, 0, 0, 0); // 初始化 alpha 值为 0
         isDark = false;
     }
@@ -41,7 +42,7 @@ public class DarkenScreen : MonoBehaviour
         {
             timer += Time.deltaTime;
 
-            currentAlpha = Mathf.Lerp(originalAlpha, targetAlpha, timer / duration); // 过渡 alpha 值
+            currentAlpha = Mathf.Lerp(0, targetAlpha, timer / duration); // 过渡 alpha 值
 
             darkMask.color = new Color(0, 0, 0, currentAlpha); // 更新 Image 图片的 alpha 值
         }
