@@ -10,6 +10,7 @@ public class DishDisplay : MonoBehaviour
     public Image originalImage;
     public Image plateImage;
     public Image visionImage;
+    public Image hover;
     public List<Sprite> visionImages;
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public class DishDisplay : MonoBehaviour
     public void UpdateData(FoodData data)
     {
         dish = data;
-
+        hover.sprite = dish.Ingredient;
         //foreignObjectImage.sprite = dish.ForeignObjectImage;
 
         if (data.visionType == VisionType.None)

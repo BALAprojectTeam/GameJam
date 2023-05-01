@@ -2271,6 +2271,7 @@ MonoBehaviour:
   originalImage: {fileID: 288173095}
   plateImage: {fileID: 0}
   visionImage: {fileID: 264830789}
+  hover: {fileID: 822167199}
   visionImages:
   - {fileID: 21300000, guid: afe6515af42925d4f821305279a99f82, type: 3}
   - {fileID: 21300000, guid: b9d8aafe62aa25a42a64bc6b405dc387, type: 3}
@@ -4563,6 +4564,7 @@ MonoBehaviour:
   originalImage: {fileID: 725006771}
   plateImage: {fileID: 0}
   visionImage: {fileID: 912391318}
+  hover: {fileID: 1120890358}
   visionImages:
   - {fileID: 21300000, guid: afe6515af42925d4f821305279a99f82, type: 3}
   - {fileID: 21300000, guid: b9d8aafe62aa25a42a64bc6b405dc387, type: 3}
