@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     CustomerManager customerManager;
     HandManager handManager;
 
+    public List<TMPro.TextMeshProUGUI> customerInfos;
+
     // tmp info
     public TMPro.TextMeshProUGUI foodInfo;
     public TMPro.TextMeshProUGUI customerInfo;
@@ -82,7 +84,7 @@ public class GameManager : MonoBehaviour
 
     void UpdateScore()
     {
-        scoreInfo.text = score.ToString();
+        scoreInfo.text = string.Format("{0}{1:0000}",score>=0?'+':'-', System.Math.Abs(score));
     }
 
     void NextTurn()
@@ -93,27 +95,58 @@ public class GameManager : MonoBehaviour
         DishDisplay dish = handManager.leftHand.dish.GetComponent<DishDisplay>();
         dish.UpdateData(foodManager.CurrentFood);
 
-        foodInfo.text = foodManager.CurrentFood.ToString();
-        customerInfo.text = customerManager.CurrentCustomer.ToString();
+        //foodInfo.text = foodManager.CurrentFood.ToString();
+        //customerInfo.text = customerManager.CurrentCustomer.ToString();
+        UpdateCustomerInfo();
         balaTimes = 0;
         find = false;
     }
-
+    void UpdateCustomerInfo()
+    {
+        var customner = customerManager.CurrentCustomer;
+        int index = 0;
+        if(customner.templateName != "")
+        {
+            customerInfos[index].text = string.Format("{0}", customner.templateName);
+            ++index;
+        }
+        if(customner.dislikeVisionType != VisionType.None)
+        {
+            customerInfos[index].text = string.Format("Don't like {0}", customner.dislikeVisionType.ToString());
+            ++index;
+        }
+        if(customner.dislikeTaste != TasteType.None)
+        {
+            customerInfos[index].text = string.Format("Don't like {0}", customner.dislikeTaste.ToString());
+            ++index;
+        }
+        if (customner.preferComponent != ExtraComponent.None)
+        {
+            customerInfos[index].text = string.Format("Better have {0}", customner.preferComponent.ToString());
+        }
+    }
     void ResetTimer()
     {
         lastTime = maxTime;
         remainTime = maxTime;
         isPause = true;
     }
-    void StartTimer()
+    public void StartTimer()
     {
         isPause = false;
         handManager.Pause(isPause);
     }
-    void PauseTimer()
+    public void PauseTimer()
     {
         isPause = true;
         handManager.Pause(isPause);
+    }
+    public void Reflush()
+    {
+        if (foodManager.CurrentFood != null && handManager.HandIdle)
+        {
+            handManager.Remake();
+        }
     }
     void DetermindWorldLine(bool isDelivery)
     {
@@ -124,12 +157,16 @@ public class GameManager : MonoBehaviour
     public void Bala()
     {
         ++balaTimes;
-        balaTimesText.text = balaTimes.ToString();
+        //balaTimesText.text = balaTimes.ToString();
+        if (foodManager.CurrentFood.hasForeignObject)
+        {
+            find = true;
+        }
     }
     public void Find()
     {
         find = !find;
-        findText.text = find.ToString();
+        //findText.text = find.ToString();
     }
     public void Delivery()
     {
