@@ -21,3 +21,5 @@ MonoBehaviour:
   visionType: 0
   tasteType: 0
   componentDescriptions: []
+  originalImage: {fileID: 0}
+  brokenImage: {fileID: 0}
