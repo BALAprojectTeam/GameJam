@@ -75,7 +75,9 @@ public class GameManager : MonoBehaviour
     void UpdateCountDownInfo()
     {
         //Debug.Log(lastTime);
-        countDownInfo.text = lastTime.ToString();
+        int min = lastTime / 60;
+        int sec = lastTime % 60;
+        countDownInfo.text = string.Format("{0: 00}:{1:00}", min, sec);
     }
 
     void UpdateScore()
