@@ -5,7 +5,11 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public static int levelTime = 1000;
+    public static int levelScore = 0;
     public int maxTime = 1000;
+    public int needScore = 0;
+
     private int lastTime = 50;
     private float remainTime;
     public bool isPause = true;
@@ -34,7 +38,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        foreach(var item in chats)
+        maxTime = levelTime;
+        needScore = levelScore;
+        foreach (var item in chats)
         {
             var color = item.color;
             color.a = 0;
@@ -80,7 +86,7 @@ public class GameManager : MonoBehaviour
     void EndGame()
     {
         isPause = true;
-        scoreInfo.text = scoreManager.IsPass().ToString();
+        scoreInfo.text = (needScore <= score).ToString();
     }
     void UpdateCountDownInfo()
     {
