@@ -4167,6 +4167,11 @@ MonoBehaviour:
   findText: {fileID: 0}
   balaTimes: 0
   find: 0
+  chiefFaces:
+  - {fileID: 21300000, guid: 07c0c87bc03428646bbdf95ea3290b47, type: 3}
+  - {fileID: 21300000, guid: 50ac6dfd1167c4ce291711580cbca7d3, type: 3}
+  - {fileID: 21300000, guid: 9727c3b9c014d04419ddc126d3e03d42, type: 3}
+  chiefFace: {fileID: 1236867968}
 --- !u!114 &1787488483
 MonoBehaviour:
   m_ObjectHideFlags: 0
