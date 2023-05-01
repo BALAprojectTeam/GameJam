@@ -74,6 +74,6 @@ public class MainMenu : MonoBehaviour
 
     public void Role(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
     }
 }
