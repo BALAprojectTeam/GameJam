@@ -983,16 +983,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   easyScoreText: {fileID: 183104220}
   easyTimeText: {fileID: 986082559}
-  easyScore: 0
-  easyTime: 1000
+  easyScore: 10
+  easyTime: 5
   normalScoreText: {fileID: 1346377999}
   normalTimeText: {fileID: 1010876465}
   normalScore: 10
   normalTime: 500
   hardScoreText: {fileID: 1245220074}
   hardTimeText: {fileID: 350479885}
-  hardScore: 100
-  hardTime: 100
+  hardScore: 10
+  hardTime: 1
 --- !u!114 &827400040
 MonoBehaviour:
   m_ObjectHideFlags: 0
