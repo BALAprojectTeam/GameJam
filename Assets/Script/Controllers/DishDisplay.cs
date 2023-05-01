@@ -19,8 +19,8 @@ public class DishDisplay : MonoBehaviour
     public void UpdateData(FoodData data)
     {
         dish = data;
-        originalImage.sprite = dish.originalImage;
-        foreignObjectImage.sprite = dish.brokenImage;
+        originalImage.sprite = dish.PerfectImage;
+        foreignObjectImage.sprite = dish.DishesWithForgeinObjectImage;
     }
     // Update is called once per frame
     void Update()
