@@ -11,8 +11,8 @@ public class Pagination : MonoBehaviour
     public void Start()
     {
         ShowPage(currentPage); // 显示当前页
-        prevButton.onClick.AddListener(PrevPage); // 绑定上一页按钮事件
-        nextButton.onClick.AddListener(NextPage); // 绑定下一页按钮事件
+        //prevButton.onClick.AddListener(PrevPage); // 绑定上一页按钮事件
+        //nextButton.onClick.AddListener(NextPage); // 绑定下一页按钮事件
     }
 
     public void PrevPage()

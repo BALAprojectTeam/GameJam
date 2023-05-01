@@ -38,7 +38,7 @@ public class DishDisplay : MonoBehaviour
             if (data.visionType == VisionType.Garlic)
             {
                 visionImage.sprite = visionImages[0];
-            }else if(data.visionType == VisionType.Ginger)
+            }else if(data.visionType == VisionType.GreenOnion)
             {
                 visionImage.sprite = visionImages[1];
             }

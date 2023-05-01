@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customerDatas:
   - {fileID: 11400000, guid: f1084308ab47e9d41b029f49ee7c1de1, type: 2}
+  - {fileID: 11400000, guid: 164381a956330bb479f1d55e1785006a, type: 2}
+  - {fileID: 11400000, guid: 967066736dae3cc47acc662e40f759ad, type: 2}
+  - {fileID: 11400000, guid: ac29f498ff66f714898cf8d8b399b966, type: 2}

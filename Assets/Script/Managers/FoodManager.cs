@@ -119,7 +119,7 @@ public class FoodManager : MonoBehaviour
             return VisionType.Onion;
         }else if (r < 0.75)
         {
-            return VisionType.Ginger;
+            return VisionType.GreenOnion;
         }
         else
         {

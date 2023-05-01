@@ -259,4 +259,12 @@ public class GameManager : MonoBehaviour
             displayChat.color = color;
         }
     }
+    public void Role(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+    }
+    public void ReturnMain()
+    {
+        SceneManager.LoadScene("LevelChoice");
+    }
 }

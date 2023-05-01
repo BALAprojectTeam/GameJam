@@ -94,7 +94,7 @@ public class CustomerManager : MonoBehaviour
         }
         else if (r < 0.5 + 1.0/3.0)
         {
-            return VisionType.Ginger;
+            return VisionType.GreenOnion;
         }
         else
         {

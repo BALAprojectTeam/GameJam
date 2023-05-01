@@ -9,9 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d5904454018c4d44bfd091b03effc76, type: 3}
-  m_Name: CustomerListByTypes
+  m_Script: {fileID: 11500000, guid: 52c10fadb7ee84d448e73bb9c238ba2b, type: 3}
+  m_Name: Vegan
   m_EditorClassIdentifier: 
-  customerDatas:
-  - {fileID: 11400000, guid: 7a0df9c271e120847a5e6dc6d90ff97d, type: 2}
-  - {fileID: 11400000, guid: c11f42e06d5020649990852aca934f37, type: 2}
+  templateName: Vegan
+  dislikeMeatTypes: 07000000
+  dislikeNonMeatTypes: 08000000
+  dislikeTaste: 0
+  dislikeVisionType: 0
+  preferComponent: 0
+  eatType: 2
+  image: {fileID: 0}
