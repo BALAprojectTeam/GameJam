@@ -18,7 +18,7 @@ public class FoodData : ScriptableObject
     public Sprite PerfectImage; //菜品完美图
     public Sprite DishesWithForgeinObjectImage; //菜品有异物图
     public Sprite BalaedDishImage; //菜品巴拉图
-    public Sprite ForeignObjectImage;// 异物本身图
+    public Sprite BalaedDishImageWithForeignObjectImage;// 异物本身图
 
 
     public int MainComponents

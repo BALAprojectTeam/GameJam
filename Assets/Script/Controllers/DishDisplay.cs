@@ -19,8 +19,8 @@ public class DishDisplay : MonoBehaviour
     public void UpdateData(FoodData data)
     {
         dish = data;
-        
-        foreignObjectImage.sprite = dish.ForeignObjectImage;
+
+        //foreignObjectImage.sprite = dish.ForeignObjectImage;
         var color = foreignObjectImage.color;
         color.a = 0;
         foreignObjectImage.color = color;
@@ -38,10 +38,18 @@ public class DishDisplay : MonoBehaviour
         originalImage.sprite = dish.BalaedDishImage;
         if (dish.hasForeignObject)
         {
-            var color = foreignObjectImage.color;
-            color.a = 1;
-            foreignObjectImage.color = color;
+            originalImage.sprite = dish.BalaedDishImageWithForeignObjectImage;
         }
+        else
+        {
+            originalImage.sprite = dish.BalaedDishImage ;
+        }
+        //if (dish.hasForeignObject)
+        //{
+        //    var color = foreignObjectImage.color;
+        //    color.a = 1;
+        //    foreignObjectImage.color = color;
+        //}
     }
     // Update is called once per frame
     void Update()
