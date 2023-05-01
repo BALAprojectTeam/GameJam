@@ -14,10 +14,15 @@ public class DishDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        originalImage.sprite= dish.originalImage;
+        //originalImage.sprite= dish.originalImage;
+        //foreignObjectImage.sprite = dish.brokenImage;
+    }
+    public void UpdateData(FoodData data)
+    {
+        dish = data;
+        originalImage.sprite = dish.originalImage;
         foreignObjectImage.sprite = dish.brokenImage;
     }
-
     // Update is called once per frame
     void Update()
     {
