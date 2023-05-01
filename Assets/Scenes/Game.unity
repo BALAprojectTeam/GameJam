@@ -192,7 +192,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: 62cb99b11dd9d495ea4ea662432ee055, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: a387bb31670f342f68288da715f066d3, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -1635,6 +1635,8 @@ GameObject:
   - component: {fileID: 1293745888}
   - component: {fileID: 1293745887}
   - component: {fileID: 1293745886}
+  - component: {fileID: 1293745891}
+  - component: {fileID: 1293745890}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1724,6 +1726,35 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1293745890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293745885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbb218d74eb9b4eee8efd9f5d9382f46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonsToShow: []
+--- !u!114 &1293745891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293745885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eaeeb883f35c4adeb88af5beb2d752a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonsToHide:
+  - {fileID: 1003131367}
+  - {fileID: 1003131367}
+  - {fileID: 1003131367}
 --- !u!1 &1299344288
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,7 +2010,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: 62cb99b11dd9d495ea4ea662432ee055, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: db76a098de7d44ed988c9d56218fb62f, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
