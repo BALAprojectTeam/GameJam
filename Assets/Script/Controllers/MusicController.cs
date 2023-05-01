@@ -1,4 +1,7 @@
 using UnityEngine;
+using UnityEngine.Audio;
+using System.Collections;
+
 
 public class MusicController : MonoBehaviour
 {
@@ -13,11 +16,16 @@ public class MusicController : MonoBehaviour
         audioSource.clip = firstAudioClip;
         audioSource.loop = false;
         audioSource.Play();
-        audioSource.AddOnCompletedCallback(OnFirstAudioClipCompleted);
+        audioSource.clip = firstAudioClip;
+        audioSource.loop = false;
+        audioSource.Play();
+        audioSource.PlayOneShot(firstAudioClip);
+        StartCoroutine(PlaySecondAudioClip());
     }
 
-    void OnFirstAudioClipCompleted()
+    IEnumerator PlaySecondAudioClip()
     {
+        yield return new WaitForSeconds(firstAudioClip.length);
         audioSource.clip = secondAudioClip;
         audioSource.loop = true;
         audioSource.Play();
