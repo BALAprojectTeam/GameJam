@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     public List<Sprite> chiefFaces;
     public Image chiefFace;
     // Start is called before the first frame update
+    public CustomImageController customImageController;
     void Start()
     {
         maxTime = levelTime;
@@ -129,6 +130,7 @@ public class GameManager : MonoBehaviour
         //foodInfo.text = foodManager.CurrentFood.ToString();
         //customerInfo.text = customerManager.CurrentCustomer.ToString();
         UpdateCustomerInfo();
+        customImageController.Change();
         balaTimes = 0;
         find = false;
 
@@ -267,5 +269,9 @@ public class GameManager : MonoBehaviour
     public void ReturnMain()
     {
         SceneManager.LoadScene("LevelChoice");
+    }
+    public bool Idle()
+    {
+        return foodManager.CurrentFood != null && handManager.HandIdle;
     }
 }

@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 108868472}
   - component: {fileID: 108868471}
   m_Layer: 0
-  m_Name: "\u54C1\u5C1D\u83DC\u54C1\u97F3\u6548"
+  m_Name: tasteAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -905,7 +905,7 @@ GameObject:
   - component: {fileID: 217854540}
   - component: {fileID: 217854539}
   m_Layer: 0
-  m_Name: "\u6309\u94AE\u97F3\u6548"
+  m_Name: ButtonAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1287,7 +1287,7 @@ GameObject:
   - component: {fileID: 320995706}
   - component: {fileID: 320995705}
   m_Layer: 0
-  m_Name: "bala\u97F3\u6548 (1)"
+  m_Name: balaAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1626,7 +1626,7 @@ GameObject:
   - component: {fileID: 443739871}
   - component: {fileID: 443739870}
   m_Layer: 0
-  m_Name: "tioaguo \u6548 (2)"
+  m_Name: tioaguoAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1841,6 +1841,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1636145927}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1105662939}
+        m_TargetAssemblyTypeName: CustomImageController, Assembly-CSharp
+        m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3446,6 +3458,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 2d90ac7f7eb1d704cad4f5b96f7e3958, type: 3}
   - {fileID: 21300000, guid: e21dfb66f074c6c4eaa65355b3001fd4, type: 3}
   - {fileID: 21300000, guid: e5faee34404db7a4bbfd75b6e5c175ad, type: 3}
+  manager: {fileID: 1787488482}
 --- !u!114 &1105662940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3734,6 +3747,18 @@ MonoBehaviour:
       - m_Target: {fileID: 443739870}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1105662939}
+        m_TargetAssemblyTypeName: CustomImageController, Assembly-CSharp
+        m_MethodName: OnButtonClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4039,6 +4064,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1105662939}
+        m_TargetAssemblyTypeName: CustomImageController, Assembly-CSharp
+        m_MethodName: OnButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1231206241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4258,7 +4295,7 @@ GameObject:
   - component: {fileID: 1289154486}
   - component: {fileID: 1289154485}
   m_Layer: 0
-  m_Name: "remake\u97F3\u6548"
+  m_Name: remakeAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4898,7 +4935,7 @@ GameObject:
   - component: {fileID: 1636145928}
   - component: {fileID: 1636145927}
   m_Layer: 0
-  m_Name: "delivery\u97F3\u6548"
+  m_Name: deliveryAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5269,6 +5306,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 50ac6dfd1167c4ce291711580cbca7d3, type: 3}
   - {fileID: 21300000, guid: 9727c3b9c014d04419ddc126d3e03d42, type: 3}
   chiefFace: {fileID: 1236867968}
+  customImageController: {fileID: 1105662939}
 --- !u!114 &1787488483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5325,7 +5363,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

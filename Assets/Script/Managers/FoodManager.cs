@@ -86,7 +86,7 @@ public class FoodManager : MonoBehaviour
 
     bool RandomForeignObject()
     {
-        return Random.Range(0.0f, 1.0f) > 0.5;
+        return Random.Range(0.0f, 1.0f) > 0.8;
     }
     TasteType RandomTasteType()
     {
