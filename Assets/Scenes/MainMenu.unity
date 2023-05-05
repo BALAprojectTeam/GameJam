@@ -2149,7 +2149,7 @@ GameObject:
   - component: {fileID: 1704760755}
   - component: {fileID: 1704760754}
   m_Layer: 5
-  m_Name: RoleBotton
+  m_Name: RuleBotton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2173,8 +2173,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 430, y: -395}
-  m_SizeDelta: {x: 414.9996, y: 180}
+  m_AnchoredPosition: {x: 430, y: -374.6392}
+  m_SizeDelta: {x: 373.7726, y: 141.3967}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1704760754
 MonoBehaviour:
@@ -2206,7 +2206,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 21300000, guid: eab0250cc66d146ed94fe24e24a050a0, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 82ea91f69a4239946bee3a04ca473eb1, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -2264,7 +2264,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4dacd3883b6fb40b9b774b2caf704c67, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f0111255c9170d4f8faefce3c4b20c5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
